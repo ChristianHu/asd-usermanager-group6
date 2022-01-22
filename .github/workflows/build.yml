@@ -43,7 +43,7 @@ jobs:
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ChristianHu_asd-usermanager-group6
       - uses: codecov/codecov-action@v2
         with:
-          #token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           #files: ./coverage1.xml,./coverage2.xml # optional
           flags: unittests # optional
           name: codecov-umbrella # optional
