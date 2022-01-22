@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!--<maven.compiler.source>8</maven.compiler.source>-->
-        <!--<maven.compiler.target>8</maven.compiler.target>-->
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
         <sonar.organization>christianhu</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <docker.image.prefix>christianhu1</docker.image.prefix> <maven.deploy.skip>true</maven.deploy.skip>
