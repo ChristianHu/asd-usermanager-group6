@@ -48,3 +48,10 @@ jobs:
           name: codecov-umbrella # optional
           #fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
+      - name: Build and push docker image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: christianhu1/asd-usermanager-group6
+          registry: docker.io
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
