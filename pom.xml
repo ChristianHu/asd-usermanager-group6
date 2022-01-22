@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
-        <sonar.organization>ChristianHu</sonar.organization>
+        <sonar.organization>christianhu</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <docker.image.prefix>christianhu1</docker.image.prefix> <maven.deploy.skip>true</maven.deploy.skip>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
