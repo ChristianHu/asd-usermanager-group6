@@ -48,3 +48,10 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: bash <(curl -s https://codecov.io/bash)
+      - name: Build and push docker image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: christianhu1/asd-usermanager-group6
+          registry: docker.io
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
