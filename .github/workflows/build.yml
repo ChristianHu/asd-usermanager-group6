@@ -44,3 +44,8 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
             token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Export coverage report
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: bash <(curl -s https://codecov.io/bash) -F backend
+        shell: bash
