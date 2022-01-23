@@ -30,17 +30,17 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
       - name: Cache Maven packages
-          uses: actions/cache@v1
-          with:
+        uses: actions/cache@v1
+        with:
             path: ~/.m2
             key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
             restore-keys: ${{ runner.os }}-m2
       - name: Build with Maven and Analyze
-          env:
+        env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ChristianHu_asd-usermanager-group6
       - name: CodeCov Report
-          uses: codecov/codecov-action@v2
-          with:
+        uses: codecov/codecov-action@v2
+        with:
             token: ${{ secrets.CODECOV_TOKEN }}
