@@ -1,5 +1,6 @@
 User Manager Application
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/ChristianHu/asd-usermanager-group6)
+
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/christianhu1/asd-usermanager-group6)
 
 [![codecov](https://codecov.io/gh/ChristianHu/asd-usermanager-group6/branch/master/graph/badge.svg?token=JWLFRSHVVM)](https://codecov.io/gh/ChristianHu/asd-usermanager-group6)
 
